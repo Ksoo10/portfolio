@@ -4,161 +4,242 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <section id="section-1" class="section-1">
-      <div class="container">
-        <div class="hero-section">
-          <h1 class="hero-title">HERO Title</h1>
-          <div class="text-wrapper">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Aspernatur amet illo dignissimos vitae perspiciatis tempore dicta
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="btn-group">
-        <a href="#" class="primary-btn"> Contact Me </a>
-      </div>
-      <a href="#" class="secondary-btn">About Me</a>
-    </section>
-    <section id="section-2" class="section-2">
-      <div class="container">
-        <div class="standard-block">
-          <div class="wrapper">
-            <div class="about-us-section">
-              Creative and detail-oriented front-end developer with a proven
-              ability to translate mockups from Figma, PDFs, and wireframes into
-              responsive, high-performing web experiences. Versatile in SEO
-              strategy, DNS and hosting configuration, and user-centric design.
-              Known for delivering reliable, scalable solutions in fast-paced
-              environments while maintaining a strong focus on client
-              satisfaction and clean code.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="section-3" class="section-3">
-      <div class="container">
-        <div class="standard-block">
-          <div class="flexbox-wrapper-center">
-            <div class="card-item">
-              <h3 class="card-title">Web Development</h3>
-              <div class="card-descrip">general description</div>
-            </div>
-            <div class="card-item">
-              <h3 class="card-title">Web Development</h3>
-              <div class="card-descrip">general description</div>
-            </div>
-            <div class="card-item">
-              <h3 class="card-title">Web Development</h3>
-              <div class="card-descrip">general description</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="section-4" class="section-4">
-      <div class="container">
-        <div class="standard-block">
-          <div class="ex-wrapper">
-            <h4 class="item-title">
-              Dealer Inspire- Content Support Developer
-            </h4>
-            <ul>
-              <li>
-                Developed mobile-first static webpages aligned to client mockups
-                using HTML, CSS, and Bootstrap
-              </li>
-              <li>
-                Collaborated within Agile Scrum teams to resolve client requests
-                and publish updates across WordPress environments
-              </li>
-              <li>
-                Submitted detailed JIRA tickets to address platform issues and
-                assisted QA teams with testing and validation
-              </li>
-              <li>
-                Integrated SEO elements such as title tags, meta descriptions,
-                and schema into page builds
-              </li>
-            </ul>
-          </div>
-          <div class="ex-wrapper">
-            <h4 class="item-title">
-              Dealer Inspire- Content Support Developer
-            </h4>
-            <ul>
-              <li>
-                Developed mobile-first static webpages aligned to client mockups
-                using HTML, CSS, and Bootstrap
-              </li>
-              <li>
-                Collaborated within Agile Scrum teams to resolve client requests
-                and publish updates across WordPress environments
-              </li>
-              <li>
-                Submitted detailed JIRA tickets to address platform issues and
-                assisted QA teams with testing and validation
-              </li>
-              <li>
-                Integrated SEO elements such as title tags, meta descriptions,
-                and schema into page builds
-              </li>
-            </ul>
-          </div>
-          <div class="ex-wrapper">
-            <h4 class="item-title">
-              Dealer Inspire- Content Support Developer
-            </h4>
-            <ul>
-              <li>
-                Developed mobile-first static webpages aligned to client mockups
-                using HTML, CSS, and Bootstrap
-              </li>
-              <li>
-                Collaborated within Agile Scrum teams to resolve client requests
-                and publish updates across WordPress environments
-              </li>
-              <li>
-                Submitted detailed JIRA tickets to address platform issues and
-                assisted QA teams with testing and validation
-              </li>
-              <li>
-                Integrated SEO elements such as title tags, meta descriptions,
-                and schema into page builds
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="section-5" class="section-5">
+  <main>
+    <body>
+      <!--Hero Section-->
+      <section id="section-1 " class="section-1 bg-accent">
         <div class="container">
-              <form action="process.php" method="get" class="form-wrapper">
-          <div class="form-group">
-            <label for="name"> First Name:</label>
-            <input type="text" id="name" name="name" required />
+          <div class="hero-section">
+            <div class="flex-col flex text-wrapper">
+              <h1 class="hero-title fs-large">Front-End Developer</h1>
+              <span class="sub-text tc-prim">Wilmington, Delaware</span>
+            </div>
+
+            <div class="text-wrapper">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aspernatur amet illo dignissimos vitae perspiciatis tempore
+                dicta
+              </p>
+            </div>
+            <img
+              src="/Images/dev.svg"
+              alt=""
+              srcset=""
+              width="440px"
+              height="auto"
+            />
           </div>
-          <div class="form-group">
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
         </div>
-    </section>
-  </body>
+        <div class="flex flex-row btn-group flex-wrap gap-2">
+          <a href="#" class="primary-btn"> Contact Me </a>
+          <a href="#" class="secondary-btn">Download CV</a>
+        </div>
+      </section>
+      <!--Hero Section-->
+      <!--About-Section-->
+      <section id="section-2" class="section-2 bg-accent">
+        <div class="container">
+          <div class="standard-block">
+            <div class="wrapper">
+              <h2 class="tc-prim fs-large">About Me</h2>
+              <div class="wrapper">
+                <p>
+                  Creative and detail-oriented front-end developer with a proven
+                  ability to translate mockups from Figma, PDFs, and wireframes
+                  into responsive, high-performing web experiences. Versatile in
+                  SEO strategy, DNS and hosting configuration, and user-centric
+                  design. Known for delivering reliable, scalable solutions in
+                  fast-paced environments while maintaining a strong focus on
+                  client satisfaction and clean code.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About-Section-->
+      <!--Card-Section-->
+      <section id="section-3" class="section-3 bg-accent">
+        <div class="container">
+          <div class="standard-block">
+            <img
+              src="/Images/james-harrison-vpOeXr5wmR4-unsplash.jpg"
+              alt=""
+              width="900px"
+              height="auto"
+            />
+            <div class="standard-block">
+              <div class="flex-column">
+                <h3 class="fs-small tc-prim mb-1">What I Offer</h3>
+                <h3 class="fs-large">My Services</h3>
+              </div>
+              <div class="wrapper flex justify-center">
+                <span class="tc-grey"
+                  >Custom
+                  <span class="fw-bold tc-prim"
+                    >web solutions and local SEO strategies
+                  </span>
+                  designed to grow your business. Whether building from scratch
+                  or optimizing for search, I deliver
+                  <span class="fw-bold tc-prim"> digital results </span>that
+                  matter.</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row flex-wrap justify-center gap-10 mt-2">
+              <div class="card-item">
+                <h3 class="card-title">Web Development</h3>
+                <div class="card-text">
+                  Beautiful, modern, and user-friendly website designs that
+                  leave a lasting impression on your visitors and perfectly
+                  represent your brand.
+                </div>
+              </div>
+              <div class="card-item">
+                <h3 class="card-title">SEO</h3>
+                <div class="card-text">
+                  Beautiful, modern, and user-friendly website designs that
+                  leave a lasting impression on your visitors and perfectly
+                  represent your brand.
+                </div>
+              </div>
+              <div class="card-item">
+                <h3 class="card-title">Deployment</h3>
+                <div class="card-text">
+                  Beautiful, modern, and user-friendly website designs that
+                  leave a lasting impression on your visitors and perfectly
+                  represent your brand.
+                </div>
+              </div>
+              <div class="card-item">
+                <h3 class="card-title">Maintance</h3>
+                <div class="card-text">
+                  Beautiful, modern, and user-friendly website designs that
+                  leave a lasting impression on your visitors and perfectly
+                  represent your brand.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Card-Section-->
+
+      <!--Exp-Section-->
+      <section id="section-4" class="section-4">
+        <div class="container">
+          <div class="standard-block">
+            <div class="detail-wrapper">
+              <div class="wrapper">
+                <h4 class="item-title">
+                  Dealer Inspire- Content Support Developer
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  dolore non magni minus sed, ab, voluptatibus numquam harum a
+                  maiores, est repellat fugiat quam omnis consequatur atque
+                  blanditiis in culpa.
+                </p>
+              </div>
+              <details>
+                <summary>This is a details element</summary>
+                <ul>
+                  <li>
+                    Developed mobile-first static webpages aligned to client
+                    mockups using HTML, CSS, and Bootstrap
+                  </li>
+                  <li>
+                    Collaborated within Agile Scrum teams to resolve client
+                    requests and publish updates across WordPress environments
+                  </li>
+                  <li>
+                    Submitted detailed JIRA tickets to address platform issues
+                    and assisted QA teams with testing and validation
+                  </li>
+                  <li>
+                    Integrated SEO elements such as title tags, meta
+                    descriptions, and schema into page builds
+                  </li>
+                </ul>
+              </details>
+              <details>
+                <summary>This is a details element</summary>
+                <ul>
+                  <li>
+                    Developed mobile-first static webpages aligned to client
+                    mockups using HTML, CSS, and Bootstrap
+                  </li>
+                  <li>
+                    Collaborated within Agile Scrum teams to resolve client
+                    requests and publish updates across WordPress environments
+                  </li>
+                  <li>
+                    Submitted detailed JIRA tickets to address platform issues
+                    and assisted QA teams with testing and validation
+                  </li>
+                  <li>
+                    Integrated SEO elements such as title tags, meta
+                    descriptions, and schema into page builds
+                  </li>
+                </ul>
+              </details>
+              <details>
+                <summary>This is a details element</summary>
+                <ul>
+                  <li>
+                    Developed mobile-first static webpages aligned to client
+                    mockups using HTML, CSS, and Bootstrap
+                  </li>
+                  <li>
+                    Collaborated within Agile Scrum teams to resolve client
+                    requests and publish updates across WordPress environments
+                  </li>
+                  <li>
+                    Submitted detailed JIRA tickets to address platform issues
+                    and assisted QA teams with testing and validation
+                  </li>
+                  <li>
+                    Integrated SEO elements such as title tags, meta
+                    descriptions, and schema into page builds
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Exp-Section-->
+
+      <!--Form-Section-->
+      <section id="section-5" class="section-5">
+        <div class="container">
+          <form action="process.php" method="get" class="form-wrapper">
+            <div class="form-group">
+              <label for="name"> First Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--Form-Section-->
+    </body>
+  </main>
 </html>
