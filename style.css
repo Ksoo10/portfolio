@@ -7,7 +7,7 @@
 }
 
 :root {
-  --clr-primary: rgb(16, 185, 129);
+  --clr-primary: rgb(255, 90, 54);
   --clr-secondary: rgb(30, 41, 59);
   --clr-accent: rgba(245, 240, 231);
   --clr-grey: rgb(142, 141, 143);
@@ -17,7 +17,7 @@
   --fw-bold: 700;
   --fw-vbold: 900;
   --fs-small: 1rem;
-  --fs-medium: 1.5rem;
+  --fs-medium: 1.25rem;
   --fs-large: 2rem;
   --fs-xlarge: 3rem;
 }
@@ -58,8 +58,12 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
+.img-border-rounded{
+  border-radius: 16px;
+}
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -73,16 +77,38 @@ p {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--ff-primary);
-  color: #8e8d8f;
+  color: var(--clr-secondary);
+      @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 1rem 0;
+  }
 }
 
 section {
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 2rem 1rem;
 }
+
+:is(h1, h2, h3, h4, h5, h6)  {
+  font-family: var(--ff-header);
+  line-height: 1.2;
+}
+
+hr {
+  width: 33.333%;
+  margin-top: .50rem;
+  border: .25rem solid var(--clr-primary);
+    @media (max-width: 768px) {
+      width: 66.666%;
+  }
+}
+
 /* Utility Classes */
 
 /*Color Classes*/
+.tc-white {
+  color: #ffffff;
+}
 .tc-prim {
   color: var(--clr-primary);
 }
@@ -126,6 +152,7 @@ section {
 }
 .fs-medium {
   font-size: var(--fs-medium);
+  font-family: var(--clr-primary);
 }
 .fs-large {
   font-size: var(--fs-large);
@@ -231,6 +258,10 @@ section {
 /*Flex Classes*/
 
 /*Margin-Padding Classes */
+.mx-0 {
+  margin: 0 auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -256,6 +287,14 @@ section {
 }
 /*Margin-Padding Classes */
 
+/*Width-Classes*/
+.block-650 {
+  max-width: 650px;
+}
+.block-350 {
+  max-width: 350px;
+}
+
 /* Utility Classes */
 
 /*Wrapper/Block Styling*/
@@ -272,9 +311,13 @@ section {
 }
 
 .text-wrapper {
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin: 0 auto;
   padding: 0.5rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*Wrapper/Block Styling*/
 
@@ -283,7 +326,7 @@ section {
   border: 1px solid var(--clr-accent);
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: 9px -4.5px 5.5px -6px #000000;
   background-color: #fff;
   max-width: 400px;
 
@@ -299,21 +342,23 @@ section {
     font-family: var(--ff-primary);
     font-weight: var(--fw-norm);
     font-size: 0.75rem;
-    color: #333;
+    color: var(--clr-secondary);
     margin-bottom: 0.75rem;
   }
 }
 /*Card Styles*/
 
+/*Button Styles*/
 .primary-btn {
   border: 0;
   border-radius: 20px;
   background: var(--clr-primary);
   color: white;
-  font-family: -system-ui, sans-serif;
+  font-family: var(--ff-header);
   font-size: 1rem;
   line-height: 1.2;
   white-space: nowrap;
+  box-shadow: 9px 4.5px 5.5px -6px #000000;
   text-decoration: none;
   padding: 1rem 0.75rem;
   margin: 0.25rem;
@@ -329,7 +374,8 @@ section {
   border-radius: 20px;
   background: var(--clr-secondary);
   color: white;
-  font-family: -system-ui, sans-serif;
+  font-family: var(--ff-header);
+  box-shadow: 9px 4.5px 5.5px -6px #000000;
   font-size: 1rem;
   line-height: 1.2;
   white-space: nowrap;
